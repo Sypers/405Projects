@@ -2,22 +2,28 @@
 <head>
     <title>Saudi Arabia 92nd National Day!</title>
     <style>
+        body {
+            height: 100vh;
+            width: 100vw;
+        }
+        div.container {
+            margin-left: 25%;
+        }
         header.banner{
             background-color: darkgreen;
             height: 40px;
             text-align: center;
         }
-        header.number {
+        .number {
             width: 600px;
             height: 110px;
             background-color: darkgreen;
             text-align: center;
             color: red;
             font-size: 40px;
+            float: left;
         }
-        #num{
-            padding-top: 30px;
-        }
+
         h1 {
             text-align: center;
         }
@@ -26,6 +32,8 @@
             background-color: lightgray;
             width: 600px;
             height: fit-content;
+            position: absolute;
+            margin-top:  110px;
         }
         div.message {
             width: 560px;
@@ -42,31 +50,82 @@
         p.author {
             font-family: Arial, Helvetica, sans-serif;
         }
-        div.child {
-            float:left;
-            margin-left: 32%;
-        }
         p.banner{
             width: 200px;
             height: 150px;
             background-color: forestgreen;
         }
-        div.container{
-
+        .kings {
+            width: 300px;
+            height: 150px;
+            background-color: forestgreen;
+            float: left;
+        }
+        div.info {
+            width: 300px;
+            height: 1466px;
+            background-color: yellowgreen;
+            position: absolute;
+        }
+        h2 {
+            font-size: 18px;
+            font-weight: bold;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+        p.kinfo {
+            font-family: Arial, Helvetica, sans-serif;
+            padding-left: 1em;
+        }
+        ul.klist {
+            list-style-type: none;
         }
     </style>
 </head>
 <body>
+    <!-- This section is for the page banner-->
     <div>
         <header class="banner"><img src="rancidbanner1.png" width="200" height="40" align="middle"></header>
     </div>
-        <h1><strong>Saudi Arabia National Day (92)</strong></h1>
+    <h1><strong>Saudi Arabia National Day (92)</strong></h1>
+    <!-- Divider for all content below the page header-->
+    <div class="container">
         <div>
-            <header class="number">
+            <!-- This section is for the number banner-->
+            <div class="number">
                 <img src="freshlarge.png" height="110" align="left"><p id="num">92</p>
-            </header>
+            </div>
+            <!-- This section is for the box next to the number banner-->
+            <div class="kings">
+                <img src="National Day.png" width="300" height="150" />
+                <!-- This section is for the box under the kings picture-->
+                <div class="info">
+                    <h2>Kings who ruled over 20 years</h2>
+                    <ul class="klist">
+                        <li>King Abdula Aziz</li>
+                        <li>King Saud</li>
+                        <li>King Faisal</li>
+                        <li>King Khalid</li>
+                        <li>King Fahad</li>
+                        <li>King Abdullah</li>
+                        <li>King Salman</li>
+                    </ul>
+                    <h2>Saudi Arabia Banner</h2>
+                    <p class="kinfo">"There is no god but Allah; Muhammad is the Messenger of Allah" banner.</p>
+                    <h2>The Kingdom of Saudi Arabia Vision</h2><p class="kinfo">Saudi Vision 2030</p>
+                    <h2>The celebration date</h2><p class="kinfo">September 23, 2022</p>
+                    <h2>Celebration Day</h2>
+                    <p class="kinfo">One of the most important dat, The Kingdom of Saudi Arabia's leadership and people will celebrate this day.</p>
+                    <h2>The Greatest Achievements Inspired by</h2><p class="kinfo">Prince Mohammed bin Salman</p>
+                    <h2>LINKS</h2>
+                    <ul>
+                        <li><a href="https://en.wikipedia.org/wiki/Saudi_National_Day">Saudi National Day - Wikipedia</a></li>
+                        <li><a href="https://www.vision2030.gov.sa/">Saudi Vision 2030</a></li>
+                        <li><a href="solution.html">Home</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
-    <!-- Copy and Repeat this section-->
+        <!-- This section is for the reviews section-->
         <section>
             <div class="message">
                 <img src="fresh.gif" align="left">
@@ -75,7 +134,6 @@
                 </p>
             </div>
             <p class="author"><img src="critic.gif">Reem Ali<br>Arab News</p>
-            <!-- Copy and Repeat this section-->
             <div class="message">
                 <img src="rotten.gif" align="left">
                 <p class="review">
@@ -126,5 +184,5 @@
             </div>
             <p class="author"><img src="critic.gif">NAME<br>PUBLICATION</p>
         </section>
-    
+    </div>
 </body>
