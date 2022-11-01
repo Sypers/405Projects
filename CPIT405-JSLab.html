@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<head>
+    <style>
+        table {
+            border: solid 6px black;
+        }
+
+        th,
+        tr,
+        td {
+            border-style: solid;
+        }
+
+        #cell4 {
+            background-color: blue;
+        }
+    </style>
+    <script type="text/javascript">
+        function changeColor() {
+            document.getElementById("cell4").style.backgroundColor = "red";
+        }
+
+        function showDate() {
+            document.getElementById("cell4").innerHTML = new Date().toString();
+        }
+    </script>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th rowspan="3">Cell 1</th>
+            <th>Cell 2</th>
+            <th>Cell 3</th>
+        </tr>
+        <tr>
+            <td id="cell4" colspan="2">Cell 4</td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="button" onclick="changeColor()" value="Change Color">
+                <input type="button" onclick="showDate()" value="Show Date">
+            </td>
+        </tr>
+    </table>
+</body>
